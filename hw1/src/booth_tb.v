@@ -16,6 +16,11 @@ module booth_tb;
   booth booth(.out(out), .in1(in1), .in2(in2));
   
   initial begin
+    $fsdbDumpfile("booth.fsdb");
+	$fsdbDumpvars("+struct","+mda");
+  end
+
+  initial begin
     for(i = (-(1<<width-1)+1); i < (1<<width-1); i = i+1) begin
       for(j = (-(1<<width-1)); j < (1<<width-1); j = j+1) begin
         in1 = i[width-1:0];
