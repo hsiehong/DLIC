@@ -1,0 +1,70 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : booth
+Version: Q-2019.12
+Date   : Wed Sep 23 22:53:44 2020
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: in2[0] (input port)
+  Endpoint: out[10] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth              tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[0] (in)                              0.05       0.05 r
+  U321/Y (CLKINVX1)                        0.43       0.48 f
+  U132/Y (NOR2X2)                          0.96       1.44 r
+  U305/Y (MXI2X1)                          0.47       1.91 f
+  U114/Y (OAI22X1)                         0.58       2.49 r
+  U304/Y (XOR2X1)                          0.44       2.93 r
+  U303/Y (NAND2X1)                         0.20       3.12 f
+  U299/Y (XNOR2X1)                         0.47       3.59 r
+  U297/Y (NOR2X1)                          0.23       3.82 f
+  U111/Y (OAI2BB2X1)                       0.55       4.36 r
+  U295/Y (XOR2X1)                          0.42       4.79 r
+  U292/Y (NAND2X1)                         0.19       4.98 f
+  U282/Y (XNOR2X1)                         0.47       5.46 r
+  U281/Y (CLKINVX1)                        0.26       5.72 f
+  U113/Y (OAI22X1)                         0.54       6.25 r
+  U279/Y (XOR2X1)                          0.44       6.69 r
+  U278/Y (NAND2X1)                         0.20       6.89 f
+  U262/Y (XNOR2X1)                         0.49       7.38 r
+  U261/Y (NOR2X1)                          0.21       7.59 f
+  U260/Y (AOI2BB2X1)                       0.46       8.04 f
+  U229/Y (OAI2BB1X1)                       0.35       8.39 f
+  U128/Y (OAI21X1)                         0.37       8.76 r
+  U193/Y (OAI21XL)                         0.29       9.05 f
+  U126/Y (OAI2BB1XL)                       0.68       9.72 r
+  U191/Y (XNOR2X1)                         0.45      10.17 f
+  U190/Y (NOR2X1)                          0.26      10.44 r
+  U189/Y (XOR2X1)                          0.35      10.79 f
+  U188/Y (OAI21XL)                         0.34      11.13 r
+  U187/Y (OAI2BB1X1)                       0.36      11.48 f
+  U173/Y (OAI21XL)                         0.50      11.98 r
+  U172/Y (OAI2BB1X1)                       0.36      12.34 f
+  U164/Y (OAI21XL)                         0.50      12.84 r
+  U163/Y (OAI2BB1X1)                       0.20      13.04 f
+  U161/Y (XOR2X1)                          0.23      13.27 f
+  U160/Y (NAND2X1)                         0.21      13.48 r
+  U131/Y (XNOR2X2)                         0.65      14.14 r
+  U139/Y (BUFX2)                           0.63      14.77 r
+  out[10] (out)                            0.00      14.77 r
+  data arrival time                                  14.77
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -16,7 +16,7 @@ module booth_tb;
   booth booth(.out(out), .in1(in1), .in2(in2));
   
   initial begin
-    $fsdbDumpfile("booth.fsdb2");
+    $fsdbDumpfile("booth.fsdb");
 	$fsdbDumpvars("+struct","+mda");
   end
 
